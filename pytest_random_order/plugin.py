@@ -13,7 +13,7 @@ def pytest_addoption(parser):
         '--random-order-bucket',
         action='store',
         dest='random_order_bucket',
-        default='module',
+        default='none',
         choices=bucket_types,
         help='Limit reordering of test items across units of code',
     )
